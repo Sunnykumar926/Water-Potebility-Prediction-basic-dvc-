@@ -10,7 +10,7 @@ app = FastAPI(
     description="Predicting Water Potability"
 )
 
-with open("/home/sunny/Desktop/Water-Potebility-Prediction/model.pkl", 'rb') as f:
+with open("model.pkl", 'rb') as f:
     model = pickle.load(f)
 
 @app.get('/')
